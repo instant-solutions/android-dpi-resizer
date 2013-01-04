@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>CFBundleExecutable</key>
+        <string>JavaApplicationStub</string>
+        <key>CFBundleGetInfoString</key>
+        <string>MainFrame (1)1.0, Copyright {user} 2004. All rights reserved.</string>
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundleIconFile</key>
+        <string>Android DPI Resizer.icns</string>
+        <key>CFBundleIdentifier</key>
+        <string>at.tripwire.android.imageresizer</string>
+        <key>CFBundleName</key>
+        <string>Android DPI Resizer</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+        <key>CFBundleVersion</key>
+        <string>1.0.1</string>
+        <key>Java</key>
+        <dict>
+            <key>JVMVersion</key>
+            <string>1.4*</string>
+            <key>MainClass</key>
+            <string>at.tripwire.android.imageresizer.MainFrame</string>
+            <key>Arguments</key>
+            <array/>
+            <key>ClassPath</key>
+            <string>$JAVAROOT/jar_0.jar:$JAVAROOT/imgscalr-lib-4.2.jar:$JAVAROOT/swingx-all-1.6.4.jar:$JAVAROOT/miglayout-4.0-swing.jar</string>
+        </dict>
+    </dict>
+</plist>
