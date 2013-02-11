@@ -101,7 +101,7 @@ public class DropFilePanel extends JXPanel {
 			try {
 				fileList = (List<File>) t.getTransferData(DataFlavor.javaFileListFlavor);
 				for(File file : fileList) {
-					if(file.getAbsolutePath().endsWith(".png")) {
+					if(file.getAbsolutePath().endsWith(".png") || file.getAbsolutePath().endsWith(".jpg") || file.getAbsolutePath().endsWith(".jpeg") || file.getAbsolutePath().endsWith(".gif")) {
 						elements.add(file);
 					}
 				}

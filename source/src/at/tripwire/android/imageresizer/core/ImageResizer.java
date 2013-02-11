@@ -70,6 +70,13 @@ public class ImageResizer {
 		float count = 0;
 		for (File srcFile : filesToConvert.keySet()) {
 			Density densityFrom = filesToConvert.get(srcFile);
+			String extension = "";
+
+			int i = srcFile.getName().lastIndexOf('.');
+			if (i > 0) {
+			    extension = srcFile.getName().substring(i+1);
+			}
+			System.out.println(extension);
 			try {
 				BufferedImage imgFrom = ImageIO.read(srcFile);
 				for (Density targetDensity : targetDensities) {
@@ -80,7 +87,7 @@ public class ImageResizer {
 
 					File destFile = new File(destDir, FOLDER_PREFIX + targetDensity.getName() + File.separator + srcFile.getName());
 					BufferedImage imgTo = Scalr.resize(imgFrom, Method.ULTRA_QUALITY, (int) widthTo, (int) heightTo);
-					ImageIO.write(imgTo, "png", destFile);
+					ImageIO.write(imgTo, extension, destFile);
 					count++;
 					if(monitor != null) {
 						monitor.onProgressChanged((int) (count / ((float) filesToConvert.size() * targetDensities.size()) * 100));
